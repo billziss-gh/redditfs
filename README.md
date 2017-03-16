@@ -33,7 +33,56 @@ You'll need Python >= 2.7 or >= 3.4, and FUSE. You can install FUSE via the pack
     $ pip install -r reqs.txt
     $ mkdir /r
     $ python redditfs.py /r
-    
+
+## Windows Howto
+
+You'll need Python >= 2.7 or >= 3.4, and [WinFsp](https://github.com/billziss-gh/winfsp/releases). You also need [fusepy](https://github.com/billziss-gh/fusepy).
+
+    C:\...\redditfs>set PYTHONPATH=path\to\fusepy
+
+    C:\...\redditfs>python redditfs.py R:
+    The service python has been started.
+
+Then from a different prompt:
+
+    C:\...>dir R:\programming\*
+     Volume in drive R has no label.
+     Volume Serial Number is D9C7-94B3
+
+     Directory of R:\programming
+
+    03/16/2017  02:37 PM    <DIR>          .
+    03/16/2017  02:32 PM    <DIR>          ..
+    03/16/2017  07:49 AM    <DIR>          a_case_for_fixmes_in_production_code
+    03/16/2017  03:32 AM    <DIR>          a_type-safe_typescript_immutable_library
+    03/16/2017  01:24 PM    <DIR>          acing_the_technical_interview
+    03/16/2017  12:18 PM    <DIR>          an_upgrade_to_syntaxnet,_new_models_and_a_parsing_competition
+    03/16/2017  11:14 AM    <DIR>          announcing_guetzli_a_new_open_source_jpeg_encoder_[by_google]
+    03/16/2017  10:31 AM    <DIR>          announcing_rust_1.16
+    03/15/2017  06:18 PM    <DIR>          beautiful_racket
+    03/16/2017  11:44 AM    <DIR>          client-server_web_games_with_webrtc
+    03/16/2017  04:33 AM    <DIR>          error_handling_exception_or_result
+    03/15/2017  10:38 AM    <DIR>          gitter_+_gitlab_=_win
+    03/16/2017  07:13 AM    <DIR>          gnu_guile_2.2.0_released
+    03/16/2017  05:23 AM    <DIR>          keeping_python_projects_secure_on_gitlab
+    03/16/2017  06:54 AM    <DIR>          opus_-_open_source_knowledge_base_application_for_teams
+    03/15/2017  02:11 AM    <DIR>          overclocking_tools_for_nvidia_gpus_suck,_i_made_my_own.
+    03/16/2017  03:38 AM    <DIR>          practical_color_theory_for_people_who_code
+    03/16/2017  02:18 PM    <DIR>          redshift_pitfalls_and_how_to_avoid_them
+    03/16/2017  08:58 AM    <DIR>          tail_recursion,_do_i_have_it_how_to_get_it
+    03/15/2017  09:50 PM    <DIR>          the_eigenvector_of_why_we_moved_from_language_x_to_language_y
+    03/16/2017  10:12 AM    <DIR>          web_scraping_bypassing_“403_forbidden,”_captchas,_and_more
+    03/16/2017  03:13 AM    <DIR>          why_i_love_programming
+    03/16/2017  09:50 AM    <DIR>          why_qt_and_not_imgui
+    03/16/2017  12:23 PM    <DIR>          windowise_wisely_create_windowmodalnotificationpush_in_webpages._promise-based.
+    03/15/2017  04:24 PM    <DIR>          winfsp_2017_–_fuse_for_windows_–_is_finally_here
+    03/16/2017  06:39 AM    <DIR>          wolfenstein_3d_controlled_by_sound
+                   0 File(s)              0 bytes
+                  26 Dir(s)               0 bytes free
+
+    C:\...>type R:\programming\winfsp_2017_–_fuse_for_windows_–_is_finally_here\url
+    http://www.secfs.net/winfsp/blog/files/winfsp-2017.html
+
 ## License
 
 Available under the MIT License.
