@@ -112,7 +112,7 @@ class RedditFS(fuse.Operations):
             headers={
                 'User-Agent': 'redditfs /u/evilyomiel'
             },
-            allow_redirects=False,
+            allow_redirects=True,
         )
         if r.status_code in [404, 302]:
             return
